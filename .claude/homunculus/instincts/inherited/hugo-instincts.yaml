@@ -1,0 +1,296 @@
+# Instincts generated from https://github.com/cubxxw/hugo
+# Generated: 2026-06-01T18:48:01.307Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: hugo-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/cubxxw/hugo
+---
+
+# Hugo Commit Length
+
+## Action
+
+Write moderate-length commit messages (~56 characters)
+
+## Evidence
+
+- Average commit message length: 56 chars
+- Based on 2 commits
+
+---
+id: hugo-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cubxxw/hugo
+---
+
+# Hugo Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: hugo-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cubxxw/hugo
+---
+
+# Hugo Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: hugo-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cubxxw/hugo
+---
+
+# Hugo Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: hugo-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/cubxxw/hugo
+---
+
+# Hugo Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: hugo-instinct-file-naming
+trigger: "When creating a new source file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in files across commonFolders: resources, hugolib, config, markup, tpl
+
+---
+id: hugo-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct Function Naming
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in Go source files in hugolib, markup, tpl
+
+---
+id: hugo-instinct-class-naming
+trigger: "When defining a new class or struct"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct Class Naming
+
+## Action
+
+Use PascalCase for the class or struct name
+
+## Evidence
+
+- Pattern in Go source files in hugolib, markup, tpl
+
+---
+id: hugo-instinct-constant-naming
+trigger: "When defining a new constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in Go source files in hugolib, markup, tpl
+
+---
+id: hugo-instinct-import-style
+trigger: "When importing modules or packages"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in Go source files in hugolib, markup, tpl
+
+---
+id: hugo-instinct-export-style
+trigger: "When exporting functions or types"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct Export Style
+
+## Action
+
+Use named exports (export only what is needed by name)
+
+## Evidence
+
+- Pattern in Go source files in hugolib, markup, tpl
+
+---
+id: hugo-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct Test Location
+
+## Action
+
+Place tests in a separate test directory
+
+## Evidence
+
+- Architecture: testLocation is 'separate'
+
+---
+id: hugo-instinct-commit-prefix-all
+trigger: "When making a commit that affects the entire codebase or multiple areas"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct Commit Prefix All
+
+## Action
+
+Prefix the commit message with 'all:'
+
+## Evidence
+
+- Seen in commit: 'all: Adjust tests for deprecated link and image render hook settings'
+
+---
+id: hugo-instinct-commit-prefix-images
+trigger: "When making a commit that affects image-related functionality"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct Commit Prefix Images
+
+## Action
+
+Prefix the commit message with 'images:'
+
+## Evidence
+
+- Seen in commit: 'images: Add quality setting per image format'
+
+---
+id: hugo-instinct-commit-message-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: cubxxw/hugo
+---
+
+# Hugo Instinct Commit Message Length
+
+## Action
+
+Keep the commit message concise, around 56 characters on average
+
+## Evidence
+
+- Pattern: average commit message length is 56
+
